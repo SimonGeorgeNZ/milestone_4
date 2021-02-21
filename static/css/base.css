@@ -2,78 +2,19 @@ html {
     height: 100%;
 }
 
-.main-body {
-    font-family: 'Roboto'; /* Taken from Google Fonts to replicate as close to the font used by The Foo Fighters - Futura */
-    text-transform: uppercase;
-}
 
 body {
-    height: calc(100vh - 250px);
+    height: calc(100vh - 164px);
+    font-family: 'Roboto'; /* Taken from Google Fonts to replicate as close to the font used by The Foo Fighters - Futura */
+    text-transform: uppercase;
+    background: url('/media/main_image_3.webp') no-repeat center fixed;
+    background-size: cover;
 }
 
-body::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: url('/media/main_image_2.webp') no-repeat center fixed;
-    background-size: cover;
-    opacity: .4;
-    content: "";
-    z-index: -1;
-}
+
  
 h1.logo-font {
     line-height: 85%;
-}
-
-
-.scroll-text {
-    position: relative;
-    overflow: show;
-    white-space: nowrap;
-}
-
-
-h3.scroll-text {
-    position: absolute;
-    color: black;
-    margin: 0;
-    text-align: center;
-    -moz-transform:translateX(100%);
-    -webkit-transform:translateX(100%);	
-    transform:translateX(100%);
-    /* Apply animation to this element */	
-    -moz-animation: scroll-text 10s linear infinite;
-    -webkit-animation: scroll-text 10s linear infinite;
-    animation: scroll-text 10s linear infinite;
-}
-
-
-@-moz-keyframes scroll-text {
- 0%   { -moz-transform: translateX(100%); }
- 100% { -moz-transform: translateX(-100%); }
-}
-@-webkit-keyframes scroll-text {
- 0%   { -webkit-transform: translateX(100%); }
- 100% { -webkit-transform: translateX(-100%); }
-}
-@keyframes scroll-text {
- 0%   { 
- -moz-transform: translateX(100%); /* Firefox bug fix */
- 
- -webkit-transform: translateX(100%); /* Firefox bug fix */
- 
- transform: translateX(100%); 		
- }
- 100% { 
- -moz-transform: translateX(-100%); /* Firefox bug fix */
- 
- -webkit-transform: translateX(-100%); /* Firefox bug fix */
- 
- transform: translateX(-100%); 
- }
 }
 
 
@@ -142,5 +83,11 @@ h3.scroll-text {
 
     .header-container {
         padding-top: 164px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header-container {
+        padding-top: 50px;
     }
 }
