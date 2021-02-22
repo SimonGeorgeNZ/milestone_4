@@ -1,0 +1,352 @@
+[
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp00010001001",
+            "name": "Black tee grey FF logo",
+            "description": "Black tee shirt with grey worn circle logo. Logo circa 1999 There is Nothing Left to lose album",
+            "price": 19.99,
+            "category": 1,
+            "rating": 4.7,
+            "image_url": "/media/tee_shirt_1.webp",
+            "image": "tee_shirt_1.webp"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp00010001002",
+            "name": "Black tee red circle FF logo",
+            "description": "Black tee shirt with red circle logo. Logo circa 1999 There is Nothing Left to lose album",
+            "price": 19.99,
+            "category": 1,
+            "rating": 4.6,
+            "image_url": "",
+            "image": "tee_shirt_2.webp"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp00010001003",
+            "name": "Cream tee combi bus",
+            "description": "White tee shirt with combiner’s bus logo",
+            "price": 19.99,
+            "category": 1,
+            "rating": 5,
+            "image_url": "",
+            "image": "tee_shirt_3.webp"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp00010001004",
+            "name": "Dave flip the bird",
+            "description": "Black tee shirt with Dave Grohl flipping the bird",
+            "price": 19.99,
+            "category": 1,
+            "rating": 3.9,
+            "image_url": "",
+            "image": "tee_shirt_4.webp"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp00010001005",
+            "name": "Black hoodie grey FF logo",
+            "description": "Black hoodie with a middle zip and grey FF logo. Logo circa 1999 There is nothing left to lose album",
+            "price": 39.99,
+            "category": 1,
+            "rating": 4.2,
+            "image_url": "",
+            "image": "hoodie_1.webp"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp00010001006",
+            "name": "Grey hoodie red FF logo",
+            "description": "Grey hoodie with no zip and red circle FF logo. Logo circa 1999 There is nothing left to lose album",
+            "price": 45,
+            "category": 1,
+            "rating": 4,
+            "image_url": "",
+            "image": "hoodie_2.webp"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp00010001007",
+            "name": "Black medicine at midnight hoodie",
+            "description": "Black hoodie with no zip and Medicine at Midnight logo",
+            "price": 47.5,
+            "category": 1,
+            "rating": 4.7,
+            "image_url": "",
+            "image": "hoodie_3.webp"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp00010001008",
+            "name": "Black and white 5 panel cap",
+            "description": "Black and white 5 panel cap with red “There is nothing left to lose” FF logo",
+            "price": 9.99,
+            "category": 1,
+            "rating": 4.8,
+            "image_url": "",
+            "image": "cap_1.webp"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp00010001009",
+            "name": "Black cap with FF logo",
+            "description": "Black cap with “There is nothing left to lose” FF logo",
+            "price": 12.5,
+            "category": 1,
+            "rating": 4.3,
+            "image_url": "",
+            "image": "cap_2.webp"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp00010001010",
+            "name": "Black cap with FF logo",
+            "description": "Black cap with gold “There is nothing left to lose” FF logo“ in the lower right",
+            "price": 15,
+            "category": 1,
+            "rating": 3.5,
+            "image_url": "",
+            "image": "cap_3.webp"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp00010001011",
+            "name": "Foo Fighters CD",
+            "description": "Foo Fighters CD, Released 1995",
+            "price": 15.45,
+            "category": 2,
+            "rating": 4.5,
+            "image_url": "",
+            "image": "foo_fighters_cd.webp"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp00010001012",
+            "name": "Foo Fighters CD, Deluxe edition",
+            "description": "Foo Fighters CD Deluxe edition with bonus tracks, Released 1995",
+            "price": 19.85,
+            "category": 2,
+            "rating": 4.9,
+            "image_url": "",
+            "image": "foo_fighters_cd.webp"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp00010001013",
+            "name": "The Colour and the Shape CD",
+            "description": "Foo Fighters album The Colour and the Shape, released 1997",
+            "price": 15.45,
+            "category": 2,
+            "rating": 5,
+            "image_url": "",
+            "image": "the_colour_and_the_shape_cd.webp"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp00010001014",
+            "name": "The Colour and the Shape vinyl",
+            "description": "Foo Fighters album The Colour and the Shape on vinyl, released 1997",
+            "price": 35,
+            "category": 2,
+            "rating": 4.1,
+            "image_url": "",
+            "image": "the_colour_and_the_shape_vinyl.webp"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp00010001015",
+            "name": "The Colour and the Shape CD, Deluxe edition",
+            "description": "Foo Fighters album The Colour and the Shape deluxe edition with bonus tracks, released 1997",
+            "price": 21,
+            "category": 2,
+            "rating": 4.7,
+            "image_url": "",
+            "image": "the_colour_and_the_shape_cd.webp"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp00010001016",
+            "name": "There is Nothing Left To Lose CD",
+            "description": "Foo Fighters album There is Nothing Left To Lose CD, released 1999",
+            "price": 15.45,
+            "category": 2,
+            "rating": 4.7,
+            "image_url": "",
+            "image": "there_is_nothing_left_to_lose_cd.webp"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp00010001017",
+            "name": "One by One CD",
+            "description": "Foo Fighters album One by One CD, released 2002",
+            "price": 15.45,
+            "category": 2,
+            "rating": 4.7,
+            "image_url": "",
+            "image": "one_by_one_cd.webp"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp00010001018",
+            "name": "London Twickenham March 2022 General Admission Pre Sale",
+            "description": "London Twickenham March 2022 General Admission Pre Sale available to Gold members only",
+            "price": 75,
+            "category": 3,
+            "rating": "",
+            "image_url": "",
+            "image": "gig_1_ga.webp"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp00010001019",
+            "name": "London Twickenham March 2022 General Admission",
+            "description": "London Twickenham March 2022 General Admission ticket",
+            "price": 85,
+            "category": 3,
+            "rating": "",
+            "image_url": "",
+            "image": "gig_1_ga.webp"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp00010001020",
+            "name": "London Twickenham March 2022 Seated silver",
+            "description": "London Twickenham March 2022 General seated silver area",
+            "price": 65,
+            "category": 3,
+            "rating": "",
+            "image_url": "",
+            "image": "gig_1_ga.webp"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp00010001021",
+            "name": "London Twickenham March 2022 Seated gold",
+            "description": "London Twickenham March 2022 General seated gold area",
+            "price": 70,
+            "category": 3,
+            "rating": "",
+            "image_url": "",
+            "image": "gig_1_ga.webp"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp00010001022",
+            "name": "Belfast O2 March 2022 General Admission Pre Sale",
+            "description": "Belfast O2 March 2022 General Admission Pre Sale available to Gold members only",
+            "price": 75,
+            "category": 3,
+            "rating": "",
+            "image_url": "",
+            "image": "gig_1_ga.webp"
+        }
+    },
+    {
+        "pk": 23,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp00010001023",
+            "name": "Belfast O2 March 2022 General Admission",
+            "description": "Belfast O2 March 2022 General Admission ticket",
+            "price": 85,
+            "category": 3,
+            "rating": "",
+            "image_url": "",
+            "image": "gig_1_ga.webp"
+        }
+    },
+    {
+        "pk": 24,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp00010001024",
+            "name": "Belfast O2 March 2022 Seated silver",
+            "description": "Belfast O2 March 2022 General seated silver area",
+            "price": 65,
+            "category": 3,
+            "rating": "",
+            "image_url": "",
+            "image": "gig_1_ga.webp"
+        }
+    },
+    {
+        "pk": 25,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp00010001025",
+            "name": "Belfast O2 March 2022 Seated gold",
+            "description": "Belfast O2 March 2022 General seated gold area",
+            "price": 70,
+            "category": 3,
+            "rating": "",
+            "image_url": "",
+            "image": "gig_1_ga.webp"
+        }
+    }
+]

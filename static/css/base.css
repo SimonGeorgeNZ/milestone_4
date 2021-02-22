@@ -1,36 +1,36 @@
+/* General Styling */
+
 html {
     height: 100%;
 }
 
 
 body {
-    height: calc(100vh - 250px);
+    height: calc(100vh - 164px);
     font-family: 'Roboto'; /* Taken from Google Fonts to replicate as close to the font used by The Foo Fighters - Futura */
     text-transform: uppercase;
-    background: url('/media/main_image_3.webp') no-repeat center fixed;
+    background: url('/media/main_image_2_40.webp') no-repeat center fixed;
     background-size: cover;
+    
 }
 
-
- 
 h1.logo-font {
     line-height: 85%;
 }
 
+.text-black {
+    color: #000 !important;
+}
 
-
-/* from Bulma */
-.icon {
-    align-items: center;
-    display: inline-flex;
-    justify-content: center;
-    height: 1.5rem;
-    width: 1.5rem;
+.border-black {
+    border: .1rem solid black !important;
 }
 
 .main-logo-link {
     width: fit-content;
 }
+
+/* Buttons */
 
 .shop-now-button {
     background: black;
@@ -53,14 +53,37 @@ h1.logo-font {
     color: white;
 }
 
-.text-black {
-    color: #000 !important;
+.nav-link-text {
+    font-size: 1.5rem;;
 }
 
 
-.border-black {
-    border: 1px solid black !important;
+/* from Bulma */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
 }
+
+/* Nav */
+
+.dropdown-menu {
+    color: black!important;
+}
+
+.dropdown-item {
+    font-size: 1.2rem;
+}
+
+.nav-style {
+    background-color: white;
+    opacity: 0.5;
+}
+
+
+
 
 /* -------------------------------- Media Queries */
 
@@ -82,12 +105,31 @@ h1.logo-font {
     }
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 45vh;
     }
 }
 
 @media (max-width: 992px) {
     .header-container {
-        padding-top: 50px;
+        padding-top: 45vh;
     }
+
+    h1.logo-font {
+    font-size: 2.8rem;
+    }
+
+    .nav-link-text {
+        font-size: .7rem;
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+    }
+
+    .dropdown-item {
+    font-size: .8rem;
+    }
+
+    a.logo-font {
+        font-size: 1rem;
+    }
+
 }
