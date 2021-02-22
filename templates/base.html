@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        <link rel="stylesheet" href="{% static 'css/scroll_text.css' %}">
     {% endblock %}
 
     {% block extra_css %}
@@ -116,6 +117,8 @@
 
     {% block content %}
     {% endblock %}
+
+    <!--{% include 'includes/scrolling_text.html' %}-->
 
     {% block postloadjs %}
     {% endblock %}

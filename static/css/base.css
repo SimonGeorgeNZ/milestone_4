@@ -4,7 +4,7 @@ html {
 
 
 body {
-    height: calc(100vh - 164px);
+    height: calc(100vh - 250px);
     font-family: 'Roboto'; /* Taken from Google Fonts to replicate as close to the font used by The Foo Fighters - Futura */
     text-transform: uppercase;
     background: url('/media/main_image_3.webp') no-repeat center fixed;
