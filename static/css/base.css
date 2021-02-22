@@ -6,9 +6,8 @@ html {
 
 
 body {
-    height: calc(100vh - 164px);
+    height: calc(100vh - 200px);
     font-family: 'Roboto'; /* Taken from Google Fonts to replicate as close to the font used by The Foo Fighters - Futura */
-    text-transform: uppercase;
     background: url('/media/main_image_2_40.webp') no-repeat center fixed;
     background-size: cover;
     
@@ -16,6 +15,7 @@ body {
 
 h1.logo-font {
     line-height: 85%;
+    text-transform: uppercase;
 }
 
 .text-black {
@@ -29,6 +29,8 @@ h1.logo-font {
 .main-logo-link {
     width: fit-content;
 }
+
+
 
 /* Buttons */
 
@@ -54,7 +56,7 @@ h1.logo-font {
 }
 
 .nav-link-text {
-    font-size: 1.5rem;;
+    font-size: 1.5rem;
 }
 
 
@@ -84,7 +86,6 @@ h1.logo-font {
 
 
 
-
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -105,31 +106,38 @@ h1.logo-font {
     }
 
     .header-container {
-        padding-top: 45vh;
+        padding-top: 200px;
     }
+
 }
 
 @media (max-width: 992px) {
-    .header-container {
-        padding-top: 45vh;
-    }
 
     h1.logo-font {
-    font-size: 2.8rem;
+        font-size: 1.5rem;
     }
+   
 
     .nav-link-text {
         font-size: .7rem;
-        padding-left: 0.2rem;
-        padding-right: 0.2rem;
+        padding-left: 0.1rem;
+        padding-right: 0.1rem;
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
     }
 
     .dropdown-item {
-    font-size: .8rem;
+        font-size: .8rem;
     }
 
     a.logo-font {
         font-size: 1rem;
+    }
+
+    
+    .navbar-toggler {
+        padding: .3rem .3rem;
+        font-size: .8rem;
     }
 
 }

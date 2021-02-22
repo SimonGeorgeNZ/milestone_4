@@ -23,7 +23,7 @@
             "price": 19.99,
             "category": 1,
             "rating": 4.6,
-            "image_url": "",
+            "image_url": "/media/tee_shirt_2.webp",
             "image": "tee_shirt_2.webp"
         }
     },
@@ -37,7 +37,7 @@
             "price": 19.99,
             "category": 1,
             "rating": 5,
-            "image_url": "",
+            "image_url": "/media/tee_shirt_3.webp",
             "image": "tee_shirt_3.webp"
         }
     },
@@ -51,7 +51,7 @@
             "price": 19.99,
             "category": 1,
             "rating": 3.9,
-            "image_url": "",
+            "image_url": "/media/tee_shirt_4.webp",
             "image": "tee_shirt_4.webp"
         }
     },
@@ -65,7 +65,7 @@
             "price": 39.99,
             "category": 1,
             "rating": 4.2,
-            "image_url": "",
+            "image_url": "/media/hoodie_1.webp",
             "image": "hoodie_1.webp"
         }
     },
@@ -79,7 +79,7 @@
             "price": 45,
             "category": 1,
             "rating": 4,
-            "image_url": "",
+            "image_url": "/media/hoodie_2.webp",
             "image": "hoodie_2.webp"
         }
     },
@@ -93,7 +93,7 @@
             "price": 47.5,
             "category": 1,
             "rating": 4.7,
-            "image_url": "",
+            "image_url": "/media/hoodie_3.webp",
             "image": "hoodie_3.webp"
         }
     },
@@ -107,7 +107,7 @@
             "price": 9.99,
             "category": 1,
             "rating": 4.8,
-            "image_url": "",
+            "image_url": "/media/cap_1.webp",
             "image": "cap_1.webp"
         }
     },
@@ -121,7 +121,7 @@
             "price": 12.5,
             "category": 1,
             "rating": 4.3,
-            "image_url": "",
+            "image_url": "/media/cap_2.webp",
             "image": "cap_2.webp"
         }
     },
@@ -135,7 +135,7 @@
             "price": 15,
             "category": 1,
             "rating": 3.5,
-            "image_url": "",
+            "image_url": "/media/cap_3.webp",
             "image": "cap_3.webp"
         }
     },
@@ -149,7 +149,7 @@
             "price": 15.45,
             "category": 2,
             "rating": 4.5,
-            "image_url": "",
+            "image_url": "/media/foo_fighters_cd.webp",
             "image": "foo_fighters_cd.webp"
         }
     },
@@ -163,7 +163,7 @@
             "price": 19.85,
             "category": 2,
             "rating": 4.9,
-            "image_url": "",
+            "image_url": "/media/foo_fighters_cd.webp",
             "image": "foo_fighters_cd.webp"
         }
     },
@@ -177,7 +177,7 @@
             "price": 15.45,
             "category": 2,
             "rating": 5,
-            "image_url": "",
+            "image_url": "/media/the_colour_and_the_shape_cd.webp",
             "image": "the_colour_and_the_shape_cd.webp"
         }
     },
@@ -191,7 +191,7 @@
             "price": 35,
             "category": 2,
             "rating": 4.1,
-            "image_url": "",
+            "image_url": "/media/the_colour_and_the_shape_vinyl.webp",
             "image": "the_colour_and_the_shape_vinyl.webp"
         }
     },
@@ -205,7 +205,7 @@
             "price": 21,
             "category": 2,
             "rating": 4.7,
-            "image_url": "",
+            "image_url": "/media/the_colour_and_the_shape_cd.webp",
             "image": "the_colour_and_the_shape_cd.webp"
         }
     },
@@ -219,7 +219,7 @@
             "price": 15.45,
             "category": 2,
             "rating": 4.7,
-            "image_url": "",
+            "image_url": "/media/there_is_nothing_left_to_lose_cd.webp",
             "image": "there_is_nothing_left_to_lose_cd.webp"
         }
     },
@@ -233,7 +233,7 @@
             "price": 15.45,
             "category": 2,
             "rating": 4.7,
-            "image_url": "",
+            "image_url": "/media/one_by_one_cd.webp",
             "image": "one_by_one_cd.webp"
         }
     },
@@ -246,8 +246,7 @@
             "description": "London Twickenham March 2022 General Admission Pre Sale available to Gold members only",
             "price": 75,
             "category": 3,
-            "rating": "",
-            "image_url": "",
+            "image_url": "/media/gig_1_ga.webp",
             "image": "gig_1_ga.webp"
         }
     },
@@ -260,8 +259,7 @@
             "description": "London Twickenham March 2022 General Admission ticket",
             "price": 85,
             "category": 3,
-            "rating": "",
-            "image_url": "",
+            "image_url": "/media/gig_1_ga.webp",
             "image": "gig_1_ga.webp"
         }
     },
@@ -274,8 +272,7 @@
             "description": "London Twickenham March 2022 General seated silver area",
             "price": 65,
             "category": 3,
-            "rating": "",
-            "image_url": "",
+            "image_url": "/media/gig_1_ga.webp",
             "image": "gig_1_ga.webp"
         }
     },
@@ -288,8 +285,7 @@
             "description": "London Twickenham March 2022 General seated gold area",
             "price": 70,
             "category": 3,
-            "rating": "",
-            "image_url": "",
+            "image_url": "/media/gig_1_ga.webp",
             "image": "gig_1_ga.webp"
         }
     },
@@ -302,8 +298,7 @@
             "description": "Belfast O2 March 2022 General Admission Pre Sale available to Gold members only",
             "price": 75,
             "category": 3,
-            "rating": "",
-            "image_url": "",
+            "image_url": "/media/gig_1_ga.webp",
             "image": "gig_1_ga.webp"
         }
     },
@@ -316,8 +311,7 @@
             "description": "Belfast O2 March 2022 General Admission ticket",
             "price": 85,
             "category": 3,
-            "rating": "",
-            "image_url": "",
+            "image_url": "/media/gig_1_ga.webp",
             "image": "gig_1_ga.webp"
         }
     },
@@ -330,8 +324,7 @@
             "description": "Belfast O2 March 2022 General seated silver area",
             "price": 65,
             "category": 3,
-            "rating": "",
-            "image_url": "",
+            "image_url": "/media/gig_1_ga.webp",
             "image": "gig_1_ga.webp"
         }
     },
@@ -344,8 +337,7 @@
             "description": "Belfast O2 March 2022 General seated gold area",
             "price": 70,
             "category": 3,
-            "rating": "",
-            "image_url": "",
+            "image_url": "/media/gig_1_ga.webp",
             "image": "gig_1_ga.webp"
         }
     }
