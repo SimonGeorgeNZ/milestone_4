@@ -58,6 +58,20 @@ h1.logo-font {
 }
 
 
+.drum {
+    width: calc(.35 * 90vh);
+    height: calc(.35 * 90vh);
+    background: url('/media/kick_drum.webp') no-repeat center center;
+    background-size: contain;
+    position: fixed;
+    bottom: 5vh;
+    right: 8vw;
+    padding: 0;
+}
+
+
+
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -107,6 +121,7 @@ h1.logo-font {
 .product-container {
     overflow-y: scroll;
     height: 100%;
+    padding-bottom: 40vh;
 }
 
 
