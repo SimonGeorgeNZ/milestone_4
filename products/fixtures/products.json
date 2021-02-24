@@ -63,7 +63,7 @@
             "name": "Black hoodie grey FF logo",
             "description": "Black hoodie with a middle zip and grey FF logo. Logo circa 1999 There is nothing left to lose album",
             "price": 39.99,
-            "category": 1,
+            "category": 2,
             "rating": 4.2,
             "image_url": "/media/hoodie_1.webp",
             "image": "hoodie_1.webp"
@@ -77,7 +77,7 @@
             "name": "Grey hoodie red FF logo",
             "description": "Grey hoodie with no zip and red circle FF logo. Logo circa 1999 There is nothing left to lose album",
             "price": 45,
-            "category": 1,
+            "category": 2,
             "rating": 4,
             "image_url": "/media/hoodie_2.webp",
             "image": "hoodie_2.webp"
@@ -91,7 +91,7 @@
             "name": "Black medicine at midnight hoodie",
             "description": "Black hoodie with no zip and Medicine at Midnight logo",
             "price": 47.5,
-            "category": 1,
+            "category": 2,
             "rating": 4.7,
             "image_url": "/media/hoodie_3.webp",
             "image": "hoodie_3.webp"
@@ -105,7 +105,7 @@
             "name": "Black and white 5 panel cap",
             "description": "Black and white 5 panel cap with red “There is nothing left to lose” FF logo",
             "price": 9.99,
-            "category": 1,
+            "category": 3,
             "rating": 4.8,
             "image_url": "/media/cap_1.webp",
             "image": "cap_1.webp"
@@ -119,7 +119,7 @@
             "name": "Black cap with FF logo",
             "description": "Black cap with “There is nothing left to lose” FF logo",
             "price": 12.5,
-            "category": 1,
+            "category": 3,
             "rating": 4.3,
             "image_url": "/media/cap_2.webp",
             "image": "cap_2.webp"
@@ -133,7 +133,7 @@
             "name": "Black cap with FF logo",
             "description": "Black cap with gold “There is nothing left to lose” FF logo“ in the lower right",
             "price": 15,
-            "category": 1,
+            "category": 3,
             "rating": 3.5,
             "image_url": "/media/cap_3.webp",
             "image": "cap_3.webp"
@@ -147,7 +147,7 @@
             "name": "Foo Fighters CD",
             "description": "Foo Fighters CD, Released 1995",
             "price": 15.45,
-            "category": 2,
+            "category": 4,
             "rating": 4.5,
             "image_url": "/media/foo_fighters_cd.webp",
             "image": "foo_fighters_cd.webp"
@@ -161,7 +161,7 @@
             "name": "Foo Fighters CD, Deluxe edition",
             "description": "Foo Fighters CD Deluxe edition with bonus tracks, Released 1995",
             "price": 19.85,
-            "category": 2,
+            "category": 5,
             "rating": 4.9,
             "image_url": "/media/foo_fighters_cd.webp",
             "image": "foo_fighters_cd.webp"
@@ -175,7 +175,7 @@
             "name": "The Colour and the Shape CD",
             "description": "Foo Fighters album The Colour and the Shape, released 1997",
             "price": 15.45,
-            "category": 2,
+            "category": 4,
             "rating": 5,
             "image_url": "/media/the_colour_and_the_shape_cd.webp",
             "image": "the_colour_and_the_shape_cd.webp"
@@ -189,7 +189,7 @@
             "name": "The Colour and the Shape vinyl",
             "description": "Foo Fighters album The Colour and the Shape on vinyl, released 1997",
             "price": 35,
-            "category": 2,
+            "category": 6,
             "rating": 4.1,
             "image_url": "/media/the_colour_and_the_shape_vinyl.webp",
             "image": "the_colour_and_the_shape_vinyl.webp"
@@ -203,7 +203,7 @@
             "name": "The Colour and the Shape CD, Deluxe edition",
             "description": "Foo Fighters album The Colour and the Shape deluxe edition with bonus tracks, released 1997",
             "price": 21,
-            "category": 2,
+            "category": 5,
             "rating": 4.7,
             "image_url": "/media/the_colour_and_the_shape_cd.webp",
             "image": "the_colour_and_the_shape_cd.webp"
@@ -217,7 +217,7 @@
             "name": "There is Nothing Left To Lose CD",
             "description": "Foo Fighters album There is Nothing Left To Lose CD, released 1999",
             "price": 15.45,
-            "category": 2,
+            "category": 4,
             "rating": 4.7,
             "image_url": "/media/there_is_nothing_left_to_lose_cd.webp",
             "image": "there_is_nothing_left_to_lose_cd.webp"
@@ -231,9 +231,9 @@
             "name": "One by One CD",
             "description": "Foo Fighters album One by One CD, released 2002",
             "price": 15.45,
-            "category": 2,
+            "category": 4,
             "rating": 4.7,
-            "image_url": "/media/one_by_one.webp",
+            "image_url": "/media/one_by_one_cd.webp",
             "image": "one_by_one.webp"
         }
     },
@@ -245,7 +245,7 @@
             "name": "London Twickenham March 2022 General Admission Pre Sale",
             "description": "London Twickenham March 2022 General Admission Pre Sale available to Gold members only",
             "price": 75,
-            "category": 3,
+            "category": 7,
             "image_url": "/media/gig_1_ga.webp",
             "image": "gig_1_ga.webp"
         }
@@ -258,7 +258,7 @@
             "name": "London Twickenham March 2022 General Admission",
             "description": "London Twickenham March 2022 General Admission ticket",
             "price": 85,
-            "category": 3,
+            "category": 7,
             "image_url": "/media/gig_1_ga.webp",
             "image": "gig_1_ga.webp"
         }
@@ -271,7 +271,7 @@
             "name": "London Twickenham March 2022 Seated silver",
             "description": "London Twickenham March 2022 General seated silver area",
             "price": 65,
-            "category": 3,
+            "category": 7,
             "image_url": "/media/gig_1_ga.webp",
             "image": "gig_1_ga.webp"
         }
@@ -284,7 +284,7 @@
             "name": "London Twickenham March 2022 Seated gold",
             "description": "London Twickenham March 2022 General seated gold area",
             "price": 70,
-            "category": 3,
+            "category": 7,
             "image_url": "/media/gig_1_ga.webp",
             "image": "gig_1_ga.webp"
         }
@@ -297,7 +297,7 @@
             "name": "Belfast O2 March 2022 General Admission Pre Sale",
             "description": "Belfast O2 March 2022 General Admission Pre Sale available to Gold members only",
             "price": 75,
-            "category": 3,
+            "category": 7,
             "image_url": "/media/gig_1_ga.webp",
             "image": "gig_1_ga.webp"
         }
@@ -310,7 +310,7 @@
             "name": "Belfast O2 March 2022 General Admission",
             "description": "Belfast O2 March 2022 General Admission ticket",
             "price": 85,
-            "category": 3,
+            "category": 7,
             "image_url": "/media/gig_1_ga.webp",
             "image": "gig_1_ga.webp"
         }
@@ -323,7 +323,7 @@
             "name": "Belfast O2 March 2022 Seated silver",
             "description": "Belfast O2 March 2022 General seated silver area",
             "price": 65,
-            "category": 3,
+            "category": 7,
             "image_url": "/media/gig_1_ga.webp",
             "image": "gig_1_ga.webp"
         }
@@ -336,7 +336,7 @@
             "name": "Belfast O2 March 2022 Seated gold",
             "description": "Belfast O2 March 2022 General seated gold area",
             "price": 70,
-            "category": 3,
+            "category": 7,
             "image_url": "/media/gig_1_ga.webp",
             "image": "gig_1_ga.webp"
         }

@@ -3,23 +3,55 @@
         "pk": 1,
         "model": "products.category",
         "fields": {
-            "name": "Merchandise",
-            "friendly_name": "Merchandise"
+            "name": "tee_shirts",
+            "friendly_name": "Tee Shirts"
         }
     },
     {
         "pk": 2,
         "model": "products.category",
         "fields": {
-            "name": "Albums",
-            "friendly_name": "Albums"
+            "name": "hoodies",
+            "friendly_name": "Hoodies"
         }
     },
     {
         "pk": 3,
         "model": "products.category",
         "fields": {
-            "name": "Tickets",
+            "name": "caps",
+            "friendly_name": "Caps"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.category",
+        "fields": {
+            "name": "cd",
+            "friendly_name": "CDs"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.category",
+        "fields": {
+            "name": "delux_cd",
+            "friendly_name": "Delux CDs"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.category",
+        "fields": {
+            "name": "vinyl",
+            "friendly_name": "Vinyl"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.category",
+        "fields": {
+            "name": "tickets",
             "friendly_name": "Tickets"
         }
     }

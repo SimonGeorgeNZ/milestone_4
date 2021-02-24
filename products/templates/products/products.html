@@ -15,12 +15,8 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col text-center mt-3">
-                <h2 class="logo-font mt-4 text-uppercase">Products</h2>
-                {% for c in current_categories %}
-                    <a class="category-badge text-decoration-none" href="">
-                        <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
-                    </a>
-                {% endfor %}
+                <h2 class="logo-font mt-4 text-uppercase">{% for c in current_categories %}{% if not forloop.last %}{{ c.friendly_name }},&nbsp 
+                    {% else %}{{ c.friendly_name }}{% endif %}{% endfor %}</h2>
                 <hr class="w-50 mb-1">
             </div>
         </div>
@@ -29,7 +25,7 @@
                 <div class="row mt-1 mb-2"></div>
                 <div class="row">
                     {% for product in products %}
-                    {% if product.category.name != "Tickets" %}
+                    {% if product.is_searchable %}
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="card h-100 border-0">
                                 {% if product.image %}

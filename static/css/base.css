@@ -113,7 +113,7 @@ h1.logo-font {
     display: block;
     position: fixed;
     top: 35vh;
-    width: auto;
+    width: 100%;
     z-index: 1000;
     height: 100%;
 }
