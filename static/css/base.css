@@ -70,6 +70,26 @@ h1.logo-font {
 }
 
 
+a.category-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
+}
+
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link, 
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
+
 
 
 /* from Bulma */
@@ -116,6 +136,7 @@ h1.logo-font {
     width: 100%;
     z-index: 1000;
     height: 100%;
+    padding-top: 2vh;
 }
 
 .product-container {
