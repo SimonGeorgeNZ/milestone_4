@@ -17,7 +17,7 @@
         <div class="row">
             <div class="col">
                 <hr>
-                <h2 class="logo-font mb-4 text-uppercase text-center">Shopping Bag</h2>
+                <h2 class="text-black logo-font mb-4 text-uppercase text-center">Shopping Bag</h2>
                 <hr>
             </div>
         </div>
@@ -105,10 +105,10 @@
                     </a>
                 {% endif %}
                 <tr>
-                    <td colspan="5" class="pt-5 text-right text-black">
-                        <h6><strong>Bag Total: ${{ total|floatformat:2 }}</strong></h6>
-                        <h6>Delivery: ${{ delivery|floatformat:2 }}</h6>
-                        <h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
+                    <td colspan="5" class="pt-5 text-right">
+                        <h6 class="text-black"><strong>Bag Total: ${{ total|floatformat:2 }}</strong></h6>
+                        <h6 class="text-black">Delivery: ${{ delivery|floatformat:2 }}</h6>
+                        <h4 class="mt-4 text-black"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
                         {% if free_delivery_delta > 0 %}
                             <p class="mb-1 text-danger">
                                 You could get free delivery by spending just <strong>${{ free_delivery_delta }}</strong> more!
@@ -117,8 +117,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="5" class="text-black ">
-                        <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                    <td colspan="5">
+                        <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg text-black">
                             <span class="icon">
                                 <i class="fas fa-chevron-left"></i>
                             </span>
