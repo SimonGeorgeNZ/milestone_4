@@ -14,14 +14,13 @@
     <div class="overlay"></div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col text-center mt-3">
-                <h2 class="text-black logo-font mt-4 text-uppercase">Products</h2>
+            <div class="col text-center mt-1">
+                <h2 class="text-black logo-font text-uppercase">Products</h2>
                 {% for c in current_categories %}
                 <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
-                    <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
+                    <span class="p-2 mt-1 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
                 </a>
                 {% endfor %}
-                <hr class="w-50 mb-5">
             </div>
         </div>
         <div class="row product-container-outter">

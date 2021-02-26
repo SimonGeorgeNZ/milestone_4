@@ -138,6 +138,8 @@
 
     {% block postloadjs %}
         <script type="text/javascript">
+
+            $('.toast').toast({ delay: 4500 });
             $('.toast').toast('show');
         </script>
     {% endblock %}
