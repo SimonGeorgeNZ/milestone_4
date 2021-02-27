@@ -104,17 +104,23 @@ a.category-badge > span.badge:hover {
 /* Nav */
 
 
+
 .dropdown-menu {
     color: black!important;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(136, 128, 128);
 }
 
 .dropdown-item {
     font-size: 1.2rem;
+    color: black!important;
 }
 
 .nav-style {
-    background-color: rgba(136, 128, 128, 0.6);
+    background-color: rgba(136, 128, 128);
+}
+
+.sort-select {
+    padding-right: 5vw;
 }
 
 
@@ -143,6 +149,8 @@ a.category-badge > span.badge:hover {
 .product-container {
     overflow-y: auto;
     height: 90%;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 
