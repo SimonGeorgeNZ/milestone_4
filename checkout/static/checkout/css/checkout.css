@@ -11,6 +11,12 @@
   transition: box-shadow 150ms ease;
 }
 
+#id_country {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
 .StripeElement--focus,
 .stripe-style-input:focus,
 .stripe-style-input:active {
@@ -55,3 +61,14 @@
     margin: 0;
     height: 100%;
 }
+
+select, 
+select option {
+    color: #000000;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #aab7c4!important;
+}
+
