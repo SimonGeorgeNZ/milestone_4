@@ -31,7 +31,7 @@
         <div class="product-container">
             <div class="row">
                 <div class="col-12 col-lg-8">
-                    <p class="text-black text-center">Thanks {{ order.full_name }} You're all done! We've sent all the details to <u>{{ order.email }}</u>.
+                    <p class="text-black text-center">Thanks {{ order.full_name | title }}, You're all done! We've sent all the details to <u>{{ order.email }}</u>.
                     Come back and see us again soon!</p>
                     <div class="order-confirmation-wrapper p-2 border-black">
                         <div class="row">
