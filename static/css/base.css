@@ -107,7 +107,7 @@ a.category-badge > span.badge:hover {
 
 .dropdown-menu {
     color: black!important;
-    background-color: rgba(136, 128, 128);
+    background-color: rgb(136, 128, 128);
 }
 
 .dropdown-item {
@@ -115,13 +115,19 @@ a.category-badge > span.badge:hover {
     color: black!important;
 }
 
+.dropdown-item:hover {
+    color: rgb(136, 128, 128)!important;
+    background-color: #000;
+}
+
 .nav-style {
-    background-color: rgba(136, 128, 128);
+    background-color: rgb(136, 128, 128);
 }
 
 .sort-select {
     padding-right: 5vw;
 }
+
 
 
 /* Template page styling */
@@ -164,12 +170,21 @@ a.category-badge > span.badge:hover {
     z-index: 9999999999;
 }
 
+.message-banner {
+    min-width: 100%!important;
+    z-index: 9999999999;
+}
+
 .custom-toast {
     overflow: visible;
 }
 
 .toast-capper {
     height: 2px;
+}
+
+.toast-header {
+    background-color: rgba(136, 128, 128, 0.6)!important;
 }
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
@@ -183,6 +198,10 @@ a.category-badge > span.badge:hover {
     top: -10px;
     right: 36px;
 }
+
+/* Products */
+
+
 
 /* Convenience classes - colors copied from Bootstrap */
 .arrow-primary {
@@ -221,6 +240,60 @@ a.category-badge > span.badge:hover {
     height: 100px;
     overflow-x: hidden;
     overflow-y: auto;
+}
+
+/* Allauth */
+
+.allauth-form-inner-content p {
+    margin-top: 1.5rem; /* mt-4 */
+    color: #000;
+}
+
+.allauth-form-inner-content input {
+    border-color: #000000;
+    border-radius: 0;
+}
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+}
+
+.allauth-form-inner-content input::placeholder {
+    color: rgb(136, 128, 128);
+}
+
+.allauth-form-inner-content button,
+.allauth-form-inner-content input[type='submit'] {
+	/* btn */
+	display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #000;
+    border: 1px solid #000;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0;
+
+    /* standard bootstrap btn transitions */
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.allauth-form-inner-content button:hover,
+.allauth-form-inner-content input[type='submit']:hover {	
+	color: #fff;
+    background-color: #222;
+    border-color: #222;
+}
+
+.allauth-form-inner-content a {
+	color: #2a5ab4; 
 }
 
 

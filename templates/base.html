@@ -109,6 +109,21 @@
                 {% include 'includes/main-nav.html' %}
             </nav>
         </div>
+        <div class="message-banner">
+            {% for message in messages %}
+                {% with message.level as level %}
+                    {% if level == 40 %}
+                        {% include 'includes/toasts/toast_error_message.html' %}
+                    {% elif level == 30 %}
+                        {% include 'includes/toasts/toast_warning_message.html' %}
+                    {% elif level == 25 %}
+                        {% include 'includes/toasts/toast_success_message.html' %}
+                    {% else %}
+                        {% include 'includes/toasts/toast_info_message.html' %}
+                    {% endif %}
+                {% endwith %}
+            {% endfor %}                           
+        </div>
         
     </header>
 
