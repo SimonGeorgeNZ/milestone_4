@@ -1,0 +1,18 @@
+#profile-update-form input::placeholder {
+    color: #888080;
+}
+
+#profile-update-form .form-control {
+    color: #000000;
+}
+
+#id_default_country,
+#id_default_country option:not(:first-child) {
+    color: #000;
+}
+
+#id_default_country option:first-child {
+    color: #888080;
+}
+
+
