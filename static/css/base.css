@@ -185,6 +185,8 @@ input[name='q']::placeholder {
     background-color: rgba(136, 128, 128, 0.6)!important;
 }
 
+
+
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
     width: 0; 
@@ -293,6 +295,7 @@ input[name='q']::placeholder {
 .allauth-form-inner-content a {
 	color: #2a5ab4; 
 }
+
 
 
 
