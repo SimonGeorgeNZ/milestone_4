@@ -3,11 +3,11 @@ from django.contrib import messages
 from django.db.models import Q
 from django.contrib.auth.decorators import login_required
 from django.db.models.functions import Lower
-from .models import Product, Category
+from .models import Product, Category, Ticket
 from .forms import ProductForm
 
 def all_products(request):
-    """A view to show all products indluding sorting and search"""
+    """A view to show all products indluding sorting and search excluding tickets"""
 
     products = Product.objects.all()
     query = None
@@ -15,7 +15,7 @@ def all_products(request):
     sort = None
     direction = None
     products = products.filter(is_searchable__in=products)
-
+    tickets = Product.objects.exclude(is_searchable__in=products)
 
     if request.GET:
         if 'sort' in request.GET:
@@ -143,3 +143,17 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product has been deleted')
     return redirect(reverse('products'))
+
+
+def all_tickets(request):
+    """A view to show all products indluding sorting and search excluding tickets"""
+
+    tickets = Ticket.objects.all()
+
+    template = 'products/tickets.html'
+
+    context = {
+        'tickets': tickets,
+    }
+
+    return render(request, template, context)
