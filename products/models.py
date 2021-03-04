@@ -58,6 +58,7 @@ class Ticket(models.Model):
                 blank=True, on_delete=models.SET_NULL)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     is_searchable = models.BooleanField(default=False, null=True, blank=True)
+    is_presale = models.BooleanField(default=False, null=True, blank=True)
 
     def __str__(self):
         return self.name

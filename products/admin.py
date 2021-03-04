@@ -23,11 +23,13 @@ class CategoryAdmin(admin.ModelAdmin):
 
 class TicketAdmin(admin.ModelAdmin):
     list_display = (
+        'name',
         'country',
         'city',
         'section',
         'price',
         'date',
+        'is_presale',
     )
 
 

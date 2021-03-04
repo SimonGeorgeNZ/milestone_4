@@ -41,7 +41,11 @@
                 Tickets
             </a>
             <div class="dropdown-menu border-black" aria-labelledby="tickets-link">
-                <a href="{% url 'products' %}?category=Tickets" class="dropdown-item">All Tickets</a>
+                <p class="nav-link-text text-black text-center mt-3 text-underlined"><u>Select City</u></p>
+                <a href="{% url 'tickets' %}?city=Auckland" class="dropdown-item">Auckland</a>
+                <a href="{% url 'tickets' %}?city=Perth" class="dropdown-item">Perth</a>
+                <a href="{% url 'tickets' %}?city=Dublin" class="dropdown-item">Dublin</a>
+                <a href="{% url 'tickets' %}?city=London" class="dropdown-item">London</a>
             </div>
         </li>
     </ul>

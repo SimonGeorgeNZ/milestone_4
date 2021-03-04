@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.db.models import Q
 from django.contrib.auth.decorators import login_required
 from django.db.models.functions import Lower
-from .models import Product, Category, Ticket
+from .models import Product, Category, Ticket, City, Section
 from .forms import ProductForm
 
 def all_products(request):
@@ -146,14 +146,23 @@ def delete_product(request, product_id):
 
 
 def all_tickets(request):
-    """A view to show all products indluding sorting and search excluding tickets"""
+    """A view to show find tickets"""
 
     tickets = Ticket.objects.all()
+    city = None
 
-    template = 'products/tickets.html'
+    if request.GET:
+        if 'city' in request.GET:
+            city = request.GET['city'].split(',')
+            tickets = tickets.filter(city__name__in=city)
+            city = City.objects.filter(name__in=city)
 
     context = {
         'tickets': tickets,
+        'current_city': city,
     }
 
+    template = 'products/tickets.html'
+
     return render(request, template, context)
+

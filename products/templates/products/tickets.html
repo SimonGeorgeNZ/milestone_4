@@ -1,7 +1,5 @@
 {% extends "base.html" %}
-
 {% load static %}
-
 
 {% block page_header %}
     <div class="container header-container">
@@ -9,28 +7,117 @@
             <div class="col"></div>
         </div>
     </div>
+
 {% endblock %}
 
 {% block content %}
     <div class="overlay"></div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 col-md-6 offset-1">
-                <hr>
-                <h2 class="text-black logo-font mb-4">Buy Tickets</h2>
-                <hr>
+            <div class="col text-center mt-1">
+                <h2 class="text-black logo-font text-uppercase">Tickets</h2>
+                {% for c in current_categories %}
+                <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
+                    <span class="p-2 mt-1 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
+                </a>
+                {% endfor %}
             </div>
         </div>
-
-        <div class="product-container-outter mt-3">
+        
+        <div class="product-container-outter">
             <div class="product-container" id="scroll-div">
                 <div class="row">
-                    {{ tickets }}
+                    {% for ticket in tickets %}
+                        <div class="text-black col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                            <div class="card h-100 border-0">
+                                <a href="">
+                                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}gig_1_ga.webp" alt="{{ product.name }}">
+                                </a>
+                                <div class="card-body h-100 pb-0">
+                                    <p class="mb-0">{{ product.name }}</p>
+                                </div>
+                                <div class="card-footer bg-white pt-0 border-0 text-left">
+                                    <div class="row">
+                                        <div class="col">
+                                            <p class="lead mb-0 text-left font-weight-bold">${{ ticket.price }}</p>
+                                            <p class="small mt-1 mb-0">
+                                                <a class="" href="">
+                                                    <i class="fas fa-tag mr-1"></i>{{ ticket.city }}
+                                                </a>
+                                            </p>
+                                                <small class=""><i class="fas fa-star mr-1"></i>{{ ticket.section }}</small>
+                                            {% if request.user.is_superuser %}
+                                                <small class="ml-3">
+                                                    <a href="">Edit</a>
+                                                    <a class="text-danger" href="">Delete</a>
+                                                </small>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% if forloop.counter|divisibleby:1 %}
+                            <div class="col-12 d-sm-none mb-5">
+                                <hr>
+                            </div>
+                        {% endif %}                        
+                        {% if forloop.counter|divisibleby:2 %}
+                            <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+                                <hr>
+                            </div>
+                        {% endif %}
+                        {% if forloop.counter|divisibleby:3 %}
+                            <div class="col-12 d-none d-lg-block d-xl-none mb-5">
+                                <hr>
+                            </div>
+                        {% endif %}
+                        {% if forloop.counter|divisibleby:4 %}
+                            <div class="col-12 d-none d-xl-block mb-5">
+                                <hr>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                    <button onclick="scrollToTop()" class="btt-button shadow-sm rounded-0 border border-black">
+                        <a class="btt-link d-flex h-100">
+                            <i  class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+                        </a>	
+                    </button>
                 </div>
             </div>
         </div>
-    </div>
+    
 {% endblock %}
+{% block postloadjs %}
+    {{ block.super }}
+    
+    <script type="text/javascript">
+        $('#sort-selector').change(function() {
+            var selector = $(this);
+            var currentUrl = new URL(window.location);
 
+            var selectedVal = selector.val();
+            if(selectedVal != "reset"){
+                var sort = selectedVal.split("_")[0];
+                var direction = selectedVal.split("_")[1];
 
+                currentUrl.searchParams.set("sort", sort);
+                currentUrl.searchParams.set("direction", direction);
+
+                window.location.replace(currentUrl);
+            } else {
+                currentUrl.searchParams.delete("sort");
+                currentUrl.searchParams.delete("direction");
+
+                window.location.replace(currentUrl);
+            }
+        })
+/* Taken from http://www.4codev.com/javascript/how-to-scroll-to-top-inside-a-div-element-idpx4842482433565153327.html */ 
+
+        function scrollToTop() {
+            const el = document.getElementById("scroll-div");
+            el.scrollTop = 0;
+        }
+    </script>
+{% endblock %}
 
