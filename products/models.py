@@ -29,6 +29,12 @@ class Product(models.Model):
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
     is_searchable = models.BooleanField(default=True, null=True, blank=True)
+    is_presale = models.BooleanField(default=False, null=True, blank=True)
+    city = models.ForeignKey('City', null=True,
+                blank=True, on_delete=models.SET_NULL)
+    date = models.DateTimeField(blank=True, null=True)
+    section = models.ForeignKey('Section', null=True,
+                blank=True, on_delete=models.SET_NULL)
 
     def __str__(self):
         return self.name
@@ -42,23 +48,6 @@ class Section(models.Model):
 
 class City(models.Model):
     name = models.CharField(max_length=254)
-
-    def __str__(self):
-        return self.name
-
-
-class Ticket(models.Model):
-    verbose_name_plural = 'Tickets'
-    name = models.CharField(max_length=254)
-    country = CountryField(blank_label='Country', null=True, blank=True)
-    city = models.ForeignKey('City', null=True,
-                blank=True, on_delete=models.SET_NULL)
-    date = models.DateTimeField(null=False, blank=False)
-    section = models.ForeignKey('Section', null=True,
-                blank=True, on_delete=models.SET_NULL)
-    price = models.DecimalField(max_digits=6, decimal_places=2)
-    is_searchable = models.BooleanField(default=False, null=True, blank=True)
-    is_presale = models.BooleanField(default=False, null=True, blank=True)
 
     def __str__(self):
         return self.name

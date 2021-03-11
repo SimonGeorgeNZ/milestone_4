@@ -3,8 +3,9 @@ from django.contrib import messages
 from django.db.models import Q
 from django.contrib.auth.decorators import login_required
 from django.db.models.functions import Lower
-from .models import Product, Category, Ticket, City, Section
+from .models import Product, Category, City
 from .forms import ProductForm
+
 
 def all_products(request):
     """A view to show all products indluding sorting and search excluding tickets"""
@@ -14,8 +15,7 @@ def all_products(request):
     categories = None
     sort = None
     direction = None
-    products = products.filter(is_searchable__in=products)
-    tickets = Product.objects.exclude(is_searchable__in=products)
+
 
     if request.GET:
         if 'sort' in request.GET:
@@ -39,6 +39,11 @@ def all_products(request):
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
+        if 'city' in request.GET:
+            city = request.GET['city'].split(',')
+            tickets = tickets.filter(city__name__in=city)
+            city = City.objects.filter(name__in=city)
+        
 
     if request.GET:
         if 'q' in request.GET:
@@ -49,6 +54,7 @@ def all_products(request):
 
 
             queries = Q(name__icontains=query) | Q(description__icontains=query)
+            products = products.filter(is_searchable__in=products)
             products = products.filter(queries)
 
 
@@ -59,6 +65,7 @@ def all_products(request):
         'search_term': query,
         'current_categories': categories,
         'current_sorting': current_sorting,
+        'current_city': city,
     }
 
     return render(request, 'products/products.html', context)
@@ -72,6 +79,7 @@ def product_detail(request, product_id):
     context = {
         'product': product,
     }
+
 
     return render(request, 'products/product_detail.html', context)
 
@@ -145,24 +153,24 @@ def delete_product(request, product_id):
     return redirect(reverse('products'))
 
 
-def all_tickets(request):
+def membership(request):
     """A view to show find tickets"""
-
-    tickets = Ticket.objects.all()
-    city = None
+    
+    products = Product.objects.all()
+    categories = None
 
     if request.GET:
-        if 'city' in request.GET:
-            city = request.GET['city'].split(',')
-            tickets = tickets.filter(city__name__in=city)
-            city = City.objects.filter(name__in=city)
+        if 'category' in request.GET:
+            categories = request.GET['category'].split(',')
+            products = products.filter(category__name__in=categories)
+            categories = Category.objects.filter(name__in=categories)
+
 
     context = {
-        'tickets': tickets,
-        'current_city': city,
+        'products': products,
+        'current_categories': categories,
     }
 
-    template = 'products/tickets.html'
+    template = 'products/membership.html'
 
     return render(request, template, context)
-

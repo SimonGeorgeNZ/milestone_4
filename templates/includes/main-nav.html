@@ -35,18 +35,17 @@
                 <a href="{% url 'products' %}?category=cd,delux_cd,vinyl" class="dropdown-item">All Albums</a>
             </div>
         </li>
-
+        {% if request.user.is_authenticated %}
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black nav-link-text" href="#" id="tickets-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Tickets
+                Tickets and Membership
             </a>
             <div class="dropdown-menu border-black" aria-labelledby="tickets-link">
-                <p class="nav-link-text text-black text-center mt-3 text-underlined"><u>Select City</u></p>
-                <a href="{% url 'tickets' %}?city=Auckland" class="dropdown-item">Auckland</a>
-                <a href="{% url 'tickets' %}?city=Perth" class="dropdown-item">Perth</a>
-                <a href="{% url 'tickets' %}?city=Dublin" class="dropdown-item">Dublin</a>
-                <a href="{% url 'tickets' %}?city=London" class="dropdown-item">London</a>
+                <a href="{% url 'products' %}?category=tickets&city=auckland" class="dropdown-item">Auckland</a>
+                <a href="{% url 'products' %}?category=tickets&city=perth" class="dropdown-item">Perth</a>
+                <a href="{% url 'products' %}?category=membership" class="dropdown-item">Membership</a>
             </div>
         </li>
+        {% endif %}
     </ul>
 </div>

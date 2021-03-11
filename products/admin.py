@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Product, Category, Ticket, Section, City
+from .models import Product, Category, Section, City
 
 class ProductAdmin(admin.ModelAdmin):
     list_display = (
@@ -7,8 +7,9 @@ class ProductAdmin(admin.ModelAdmin):
         'name',
         'category',
         'price',
-        'rating',
-        'image',
+        'date',
+        'section',
+        'is_presale',
     )
 
     ordering = ('sku',)
@@ -18,18 +19,6 @@ class CategoryAdmin(admin.ModelAdmin):
     list_display = (
         'friendly_name',
         'name',
-    )
-
-
-class TicketAdmin(admin.ModelAdmin):
-    list_display = (
-        'name',
-        'country',
-        'city',
-        'section',
-        'price',
-        'date',
-        'is_presale',
     )
 
 
@@ -47,6 +36,5 @@ class CityAdmin(admin.ModelAdmin):
 
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
-admin.site.register(Ticket, TicketAdmin)
 admin.site.register(Section, SectionAdmin)
 admin.site.register(City, CityAdmin)
