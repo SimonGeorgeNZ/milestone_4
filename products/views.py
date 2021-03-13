@@ -15,6 +15,7 @@ def all_products(request):
     categories = None
     sort = None
     direction = None
+    city = None
 
 
     if request.GET:
@@ -39,9 +40,11 @@ def all_products(request):
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
+
+    if request.GET: 
         if 'city' in request.GET:
             city = request.GET['city'].split(',')
-            tickets = tickets.filter(city__name__in=city)
+            products = products.filter(city__name__in=city)
             city = City.objects.filter(name__in=city)
         
 
@@ -57,7 +60,6 @@ def all_products(request):
             products = products.filter(is_searchable__in=products)
             products = products.filter(queries)
 
-
     current_sorting = f'{sort}_{direction}'
 
     context = {
@@ -67,6 +69,8 @@ def all_products(request):
         'current_sorting': current_sorting,
         'current_city': city,
     }
+
+    print(categories)
 
     return render(request, 'products/products.html', context)
 
