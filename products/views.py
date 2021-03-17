@@ -70,8 +70,6 @@ def all_products(request):
         'current_city': city,
     }
 
-    print(categories)
-
     return render(request, 'products/products.html', context)
 
 

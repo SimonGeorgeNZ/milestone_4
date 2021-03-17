@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    height: calc(100vh - 20vh);
+    height: calc(100vh - 200px);
     font-family: 'Roboto'; /* Taken from Google Fonts to replicate as close to the font used by The Foo Fighters - Futura */
     background: url('/media/main_image_2_40.webp') no-repeat center fixed;
     background-size: cover;
@@ -54,7 +54,7 @@ h1.logo-font {
 }
 
 .nav-link-text {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 
@@ -144,11 +144,11 @@ input[name='q']::placeholder {
 .product-container-outter {
     display: block;
     position: fixed;
-    top: 37vh;
     width: 100%;
     z-index: 1000;
     height: 100%;
-    padding-bottom: 35vh;
+    top: 200px;
+    padding-bottom: 165px;
 }
 
 .product-container {
@@ -157,6 +157,7 @@ input[name='q']::placeholder {
     padding-left: 5vw;
     padding-right: 5vw;
 }
+
 
 .darkClass
 {
@@ -345,9 +346,10 @@ input[name='q']::placeholder {
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
+    .container {
+        max-width: 80%;
+    }
+
 }
 
 /* fixed top navbar only on medium and up */
@@ -359,10 +361,11 @@ input[name='q']::placeholder {
         left: 0;
         z-index: 1030;
     }
-
+    
     .header-container {
-        padding-top: 20vh;
+        padding-top: 200px;
     }
+
 
 }
 
@@ -372,9 +375,6 @@ input[name='q']::placeholder {
         font-size: 1.5rem;
     }
 
-    .header-container {
-        padding-top: 10vh;
-    }
    
 
     .nav-link-text {
