@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container-fluid">
+        <div class="product-container-outter mt-3">
+            <div class="product-container" id="scroll-div">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <h2 class="text-black logo-font mb-4">Product Management</h2>
+                        <h5 class="text-muted text-center">Add a City</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <form method="POST" action="{% url 'add_city' %}" class="form mb-2" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            {% for field in form_city %}
+                                {{ field }}
+                            {% endfor %}
+                            <div class="text-right">
+                                <a class="btn btn-outline-black rounded-0" href="{% url 'add_product' %}">Cancel</a>
+                                <button class="btn btn-black rounded-0" type="submit">Add City</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
+

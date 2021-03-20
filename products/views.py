@@ -4,7 +4,7 @@ from django.db.models import Q
 from django.contrib.auth.decorators import login_required
 from django.db.models.functions import Lower
 from .models import Product, Category, City
-from .forms import ProductForm
+from .forms import ProductForm, CityForm
 
 
 def all_products(request):
@@ -108,6 +108,33 @@ def add_product(request):
     template = 'products/add_product.html'
     context = {
         'form': form,
+    }
+
+    return render(request, template, context)
+
+
+@login_required
+def add_city(request):
+
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
+    if request.method == 'POST':
+        form_city = CityForm(request.POST, request.FILES)
+        if form_city.is_valid():
+            city = form_city.save()
+            messages.success(request, "Successfully added city")
+            return redirect(reverse('add_product'))
+        else:
+            messages.error(request, 'Failed to add city. Please ensure the form is valid')
+
+    else:
+        form_city = CityForm()
+
+    template = 'products/add_city.html'
+    context = {
+        'form_city': form_city,
     }
 
     return render(request, template, context)

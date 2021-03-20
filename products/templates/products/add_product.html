@@ -14,17 +14,20 @@
 {% block content %}
     <div class="overlay"></div>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-md-6 offset-1">
-                <hr>
-                <h2 class="text-black logo-font mb-4">Product Management</h2>
-                <h5 class="text-muted">Add a Product</h5>
-                <hr>
-            </div>
-        </div>
-
         <div class="product-container-outter mt-3">
             <div class="product-container" id="scroll-div">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <h2 class="text-black logo-font mb-4">Product Management</h2>
+                        <h5 class="text-muted text-center">Add a Product</h5>
+                    </div>
+                    <div class="col-12 col-md-6 text-center">
+                        <hr>
+                        <hr>
+                        <hr>
+                        <h5 class="text-muted">Optional</h5>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-12 col-md-6">
                         <form method="POST" action="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
@@ -41,6 +44,13 @@
                                 <button class="btn btn-black rounded-0" type="submit">Add Product</button>
                             </div>
                         </form>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h5 class="text-muted">Add a city</h5>
+                        <p>To add or remove cities for Tickets, you can do it here</p>
+                        <div class="text-right">
+                            <a href="{% url 'add_city' %}" class="btn btn-black rounded-0" type="submit">Add City</a>
+                        </div>
                     </div>
                 </div>
             </div>
