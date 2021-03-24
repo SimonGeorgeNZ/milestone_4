@@ -82,7 +82,6 @@ def product_detail(request, product_id):
         'product': product,
     }
 
-
     return render(request, 'products/product_detail.html', context)
 
 
@@ -188,6 +187,7 @@ def membership(request):
     products = Product.objects.all()
     categories = None
 
+
     if request.GET:
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
@@ -203,3 +203,27 @@ def membership(request):
     template = 'products/membership.html'
 
     return render(request, template, context)
+
+
+def member_detail(request, product_id):
+    """Show a singular product"""
+
+    product = get_object_or_404(Product, pk=product_id)
+
+    bag = request.session.get('bag', {})
+
+    member = Product.objects.get(id=product_id)
+
+    for item in bag:
+        if item == str(member.id):
+            member = True
+
+
+    context = {
+        'product': product,
+        'bag': bag,
+        'member': member,
+    }
+
+
+    return render(request, 'products/member_detail.html', context)

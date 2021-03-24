@@ -175,6 +175,10 @@ input[name='q']::placeholder {
     left: 0px;
 }
 
+.card-body {
+    padding-top: 40px;
+}
+
 
 
 /* Messages and Toast */

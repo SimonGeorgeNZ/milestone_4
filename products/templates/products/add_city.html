@@ -17,9 +17,9 @@
         <div class="product-container-outter mt-3">
             <div class="product-container" id="scroll-div">
                 <div class="row">
-                    <div class="col-12 col-md-6">
-                        <h2 class="text-black logo-font mb-4">Product Management</h2>
-                        <h5 class="text-muted text-center">Add a City</h5>
+                    <div class="col-12 col-md-6 text-black">
+                        <h2 class="logo-font mb-4">Product Management</h2>
+                        <h5 class="text-center">Add a City</h5>
                     </div>
                 </div>
                 <div class="row">
@@ -30,7 +30,7 @@
                                 {{ field }}
                             {% endfor %}
                             <div class="text-right">
-                                <a class="btn btn-outline-black rounded-0" href="{% url 'add_product' %}">Cancel</a>
+                                <a class="btn btn-outline-black rounded-0 text-black text-uppercase" href="{% url 'add_product' %}">Cancel</a>
                                 <button class="btn btn-black rounded-0" type="submit">Add City</button>
                             </div>
                         </form>
