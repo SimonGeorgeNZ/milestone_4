@@ -56,6 +56,7 @@
                                         <p class="my-0">${{ item.product.price }}</p>
                                     </td>
                                     <td class="py-3 w-25">
+                                        {% if item.product.is_membership == False %}
                                        <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
                                         {% csrf_token %}
                                         <div class="form-group">
@@ -86,6 +87,8 @@
                                         </div>
                                     </form>
                                     <a class="update-link text-info"><small>Update</small></a>
+                                    {% else %}
+                                    {% endif %}
                                     <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"><small>Remove</small></a>
 
                                     </td>

@@ -32,6 +32,7 @@ def all_products(request):
                 direction = request.GET['direction']
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
+            products = products.filter(is_searchable__in=products)
             products = products.order_by(sortkey)
 
 

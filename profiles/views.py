@@ -5,7 +5,8 @@ from .models import UserProfile
 from .forms import UserProfileForm
 
 
-from checkout.models import Order
+from checkout.models import Order, OrderLineItem
+
 
 @login_required
 def profile(request):
@@ -29,6 +30,7 @@ def profile(request):
         'orders': orders,
         'on_profile_page': True
     }
+
 
     return render(request, template, context)
 
