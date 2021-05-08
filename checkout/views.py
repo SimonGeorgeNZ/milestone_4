@@ -131,7 +131,6 @@ def checkout(request):
         messages.warning(request, 'Stripe public key is missing. \
             Did you forget to set it in your environment?')
 
-
     template = 'checkout/checkout.html'
     context = {
         'order_form': order_form,
@@ -149,6 +148,7 @@ def checkout_success(request, order_number):
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
     bag = request.session.get('bag', {})
+
 
     if request.user.is_authenticated:
         profile = UserProfile.objects.get(user=request.user)

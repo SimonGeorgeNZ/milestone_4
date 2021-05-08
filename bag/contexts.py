@@ -9,11 +9,9 @@ def bag_contents(request):
     total = 0
     product_count = 0
     bag = request.session.get('bag', {})
-    delivery = 0
     product = Product.objects.all()
-    free_delivery_delta = 0
-    delivery_cost = []
-    data = ()
+    delivery = 0
+    FDT = settings.FREE_DELIVERY_THRESHOLD
 
 
     for item_id, item_data in bag.items():
@@ -21,10 +19,6 @@ def bag_contents(request):
             product = get_object_or_404(Product, pk=item_id)
             total += item_data * product.price
             product_count += item_data
-            if product.is_membership:
-                delivery_cost = total * Decimal(settings.MEMBERSHIP_DELIVERY_PERCENTAGE / 100)
-            else:
-                delivery_cost = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
             bag_items.append({
                 'item_id': item_id,
                 'quantity': item_data,
@@ -34,12 +28,7 @@ def bag_contents(request):
             product = get_object_or_404(Product, pk=item_id)
             for size, quantity in item_data['items_by_size'].items():
                 total += quantity * product.price
-                delivery = sum(delivery_price)
                 product_count += quantity
-                if product.is_membership:
-                    delivery_cost = total * Decimal(settings.MEMBERSHIP_DELIVERY_PERCENTAGE / 100)
-                else:
-                    delivery_cost = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
                 bag_items.append({
                 'item_id': item_id,
                 'quantity': quantity,
@@ -47,23 +36,40 @@ def bag_contents(request):
                 'size': size,
             })
 
-        data = list(map(Decimal,[delivery_cost])) 
+        for product in bag.items():
+            product = get_object_or_404(Product, pk=item_id)
+        if product.is_membership:
+            delivery_cost = Decimal(0)
+            FDT = 75
+            if total > FDT:
+                print("member and more")
+            else:
+                print("member and less")
+        else:
+            delivery_cost = Decimal(product.price * settings.STANDARD_DELIVERY_PERCENTAGE / 100)
+            if total < FDT:
+                print("not member and less")
+            else:
+                print("not member and more")
+        print(delivery_cost)
 
-    print("Sum: ", sum(data))
+        delivery += delivery_cost
 
-    delivery = sum(data)
-                
+    print(FDT)
+    print(delivery)
+
+
+    
     grand_total = delivery + total
-
     
     context = {
         'bag_items': bag_items,
         'total': total,
         'product_count': product_count,
         'delivery': delivery,
-        'free_delivery_delta': free_delivery_delta,
-        'free_delivery_threshold': settings.FREE_DELIVERY_THRESHOLD,
+        'free_delivery_threshold': FDT,
         'grand_total': grand_total,
     }
+
 
     return context
