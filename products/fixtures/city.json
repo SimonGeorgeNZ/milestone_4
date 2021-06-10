@@ -1,0 +1,16 @@
+[
+    {
+        "pk": 1,
+        "model": "products.city",
+        "fields": {
+            "name": "Auckland"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.city",
+        "fields": {
+            "name": "Dublin"
+        }
+    }
+]

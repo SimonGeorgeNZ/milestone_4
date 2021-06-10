@@ -3,7 +3,7 @@
         "pk": 1,
         "model": "products.product",
         "fields": {
-            "sku": "pp00010001001",
+            "sku": "pp01001",
             "name": "Black tee grey FF logo",
             "description": "Black tee shirt with grey worn circle logo. Logo circa 1999 There is Nothing Left to lose album",
             "price": 19.99,
@@ -17,7 +17,7 @@
         "pk": 2,
         "model": "products.product",
         "fields": {
-            "sku": "pp00010001002",
+            "sku": "pp01002",
             "name": "Black tee red circle FF logo",
             "description": "Black tee shirt with red circle logo. Logo circa 1999 There is Nothing Left to lose album",
             "price": 19.99,
@@ -31,7 +31,7 @@
         "pk": 3,
         "model": "products.product",
         "fields": {
-            "sku": "pp00010001003",
+            "sku": "pp01003",
             "name": "Cream tee combi bus",
             "description": "White tee shirt with combiner’s bus logo",
             "price": 19.99,
@@ -45,7 +45,7 @@
         "pk": 4,
         "model": "products.product",
         "fields": {
-            "sku": "pp00010001004",
+            "sku": "pp01004",
             "name": "Dave flip the bird",
             "description": "Black tee shirt with Dave Grohl flipping the bird",
             "price": 19.99,
@@ -59,7 +59,7 @@
         "pk": 5,
         "model": "products.product",
         "fields": {
-            "sku": "pp00010001005",
+            "sku": "pp01005",
             "name": "Black hoodie grey FF logo",
             "description": "Black hoodie with a middle zip and grey FF logo. Logo circa 1999 There is nothing left to lose album",
             "price": 39.99,
@@ -73,7 +73,7 @@
         "pk": 6,
         "model": "products.product",
         "fields": {
-            "sku": "pp00010001006",
+            "sku": "pp01006",
             "name": "Grey hoodie red FF logo",
             "description": "Grey hoodie with no zip and red circle FF logo. Logo circa 1999 There is nothing left to lose album",
             "price": 45,
@@ -87,7 +87,7 @@
         "pk": 7,
         "model": "products.product",
         "fields": {
-            "sku": "pp00010001007",
+            "sku": "pp01007",
             "name": "Black medicine at midnight hoodie",
             "description": "Black hoodie with no zip and Medicine at Midnight logo",
             "price": 47.5,
@@ -101,7 +101,7 @@
         "pk": 8,
         "model": "products.product",
         "fields": {
-            "sku": "pp00010001008",
+            "sku": "pp01008",
             "name": "Black and white 5 panel cap",
             "description": "Black and white 5 panel cap with red “There is nothing left to lose” FF logo",
             "price": 9.99,
@@ -115,7 +115,7 @@
         "pk": 9,
         "model": "products.product",
         "fields": {
-            "sku": "pp00010001009",
+            "sku": "pp01009",
             "name": "Black cap with FF logo",
             "description": "Black cap with “There is nothing left to lose” FF logo",
             "price": 12.5,
@@ -129,7 +129,7 @@
         "pk": 10,
         "model": "products.product",
         "fields": {
-            "sku": "pp00010001010",
+            "sku": "pp01010",
             "name": "Black cap with FF logo",
             "description": "Black cap with gold “There is nothing left to lose” FF logo“ in the lower right",
             "price": 15,
@@ -143,7 +143,7 @@
         "pk": 11,
         "model": "products.product",
         "fields": {
-            "sku": "pp00010001011",
+            "sku": "pp01011",
             "name": "Foo Fighters CD",
             "description": "Foo Fighters CD, Released 1995",
             "price": 15.45,
@@ -157,7 +157,7 @@
         "pk": 12,
         "model": "products.product",
         "fields": {
-            "sku": "pp00010001012",
+            "sku": "pp01012",
             "name": "Foo Fighters CD, Deluxe edition",
             "description": "Foo Fighters CD Deluxe edition with bonus tracks, Released 1995",
             "price": 19.85,
@@ -171,7 +171,7 @@
         "pk": 13,
         "model": "products.product",
         "fields": {
-            "sku": "pp00010001013",
+            "sku": "pp001013",
             "name": "The Colour and the Shape CD",
             "description": "Foo Fighters album The Colour and the Shape, released 1997",
             "price": 15.45,
@@ -185,7 +185,7 @@
         "pk": 14,
         "model": "products.product",
         "fields": {
-            "sku": "pp00010001014",
+            "sku": "pp01014",
             "name": "The Colour and the Shape vinyl",
             "description": "Foo Fighters album The Colour and the Shape on vinyl, released 1997",
             "price": 35,
@@ -199,7 +199,7 @@
         "pk": 15,
         "model": "products.product",
         "fields": {
-            "sku": "pp00010001015",
+            "sku": "pp01015",
             "name": "The Colour and the Shape CD, Deluxe edition",
             "description": "Foo Fighters album The Colour and the Shape deluxe edition with bonus tracks, released 1997",
             "price": 21,
@@ -213,7 +213,7 @@
         "pk": 16,
         "model": "products.product",
         "fields": {
-            "sku": "pp00010001016",
+            "sku": "pp01016",
             "name": "There is Nothing Left To Lose CD",
             "description": "Foo Fighters album There is Nothing Left To Lose CD, released 1999",
             "price": 15.45,
@@ -227,7 +227,7 @@
         "pk": 17,
         "model": "products.product",
         "fields": {
-            "sku": "pp00010001017",
+            "sku": "pp01017",
             "name": "One by One CD",
             "description": "Foo Fighters album One by One CD, released 2002",
             "price": 15.45,

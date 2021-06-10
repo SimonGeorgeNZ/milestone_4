@@ -1,0 +1,104 @@
+[
+    {
+        "pk": 101,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp100101",
+            "name": "Auckland GA",
+            "description": "Auckland GA",
+            "price": 49,
+            "is_searchable": false,
+            "is_presale": false,
+            "category": 7,
+            "city": 1,
+            "section": 1,
+            "image_url": "/media/gig_1_ga.webp",
+            "image": "gig_1_ga.webp"
+        }
+    },
+    {
+        "pk": 102,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp100102",
+            "name": "Auckland Gold Seated",
+            "description": "Auckland Gold Seated",
+            "price": 41,
+            "is_searchable": false,
+            "is_presale": false,
+            "category": 7,
+            "city": 1,
+            "section": 3,
+            "image_url": "/media/gig_1_ga.webp",
+            "image": "gig_1_ga.webp"
+        }
+    },
+    {
+        "pk": 103,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp100103",
+            "name": "Auckland Silver Seated",
+            "description": "Auckland Silver Seated",
+            "price": 35,
+            "is_searchable": false,
+            "is_presale": false,
+            "category": 7,
+            "city": 1,
+            "section": 2,
+            "image_url": "/media/gig_1_ga.webp",
+            "image": "gig_1_ga.webp"
+        }
+    },
+    {
+        "pk": 104,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp100104",
+            "name": "Dublin GA",
+            "description": "Auckland GA",
+            "price": 49,
+            "is_searchable": false,
+            "is_presale": false,
+            "category": 7,
+            "city": 2,
+            "section": 1,
+            "image_url": "/media/gig_1_ga.webp",
+            "image": "gig_1_ga.webp"
+        }
+    },
+    {
+        "pk": 105,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp100105",
+            "name": "Dublin Gold Seated",
+            "description": "Dublin Gold Seated",
+            "price": 41,
+            "is_searchable": false,
+            "is_presale": false,
+            "category": 7,
+            "city": 2,
+            "section": 3,
+            "image_url": "/media/gig_1_ga.webp",
+            "image": "gig_1_ga.webp"
+        }
+    },
+    {
+        "pk": 106,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp100106",
+            "name": "Dublin Silver Seated",
+            "description": "Dublin Silver Seated",
+            "price": 35,
+            "is_searchable": false,
+            "is_presale": false,
+            "category": 7,
+            "city": 2,
+            "section": 3,
+            "image_url": "/media/gig_1_ga.webp",
+            "image": "gig_1_ga.webp"
+        }
+    }
+]

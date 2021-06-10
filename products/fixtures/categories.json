@@ -54,5 +54,13 @@
             "name": "tickets",
             "friendly_name": "Tickets"
         }
+    },
+    {
+        "pk": 8,
+        "model": "products.category",
+        "fields": {
+            "name": "mambership",
+            "friendly_name": "Membership"
+        }
     }
 ]
