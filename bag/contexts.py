@@ -60,7 +60,7 @@ def bag_contents(request):
 
 
     
-    grand_total = delivery + total
+    #grand_total = delivery + total
     
     context = {
         'bag_items': bag_items,
