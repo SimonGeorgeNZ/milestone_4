@@ -34,7 +34,7 @@ RUN echo ". /etc/mysql/mysql-bashrc-launch.sh" >> ~/.bashrc
 # Local environment variables
 # C9USER is temporary to allow the MySQL Gist to run
 ENV C9_USER="gitpod"
-ENV PORT="8080"
+ENV PORT="8000"
 ENV IP="0.0.0.0"
 ENV C9_HOSTNAME="localhost"
 
